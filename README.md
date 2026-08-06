@@ -1,7 +1,7 @@
 # mlpi2026
-## 01211373 Machine Learning and Programming for Industry
+## 01211373 Machine Learning and Programming for Industry (IUP)
 
-Electromechanical Manufacturing Engineering, Dept. of Mechanical Engineering, Kasetsart University
+ElectroMechanical Manufacturing Engineering, Dept. of Mechanical Engineering, Kasetsart University
 
 **Instructor :** Dr.Varodom Toochinda
 
