@@ -3,4 +3,4 @@ For my  course 01211373 Machine Learning and Programming for Industry (IUP progr
 
 ![mlpi](/figures/mlpi_plan.png)
 
-**Credits :** The course materials are suggested by Claude to suit the robotics/control/automation areas. 
+**Credits :** The course materials are augmented by Claude to suit the robotics/control/automation areas. 
