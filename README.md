@@ -15,7 +15,13 @@ S. Raschka, Y. Liu and V. Mirjalili. [Machine Learning with PyTorch and Scikit-L
 ### Materials
 
 <ul>
-<li />Lecture 1 : <a href="/lectures/lect01/mlpi26_course_intro.pdf">Course Introduction</a> <a href="/lectures/lect01/mlpi26_lect01.pdf">Foundations & Tooling</a>
+<li />Lecture 1 : <a href="/lectures/lect01/mlpi26_course_intro.pdf">Course Introduction</a>, <a href="/lectures/lect01/mlpi26_lect01.pdf">Foundations & Tooling</a>
+<li />Lecture 2 : <a href="/lectures/lect02/mlpi26_lect02.pdf">Classical Machine Learning</a>
+<ul>
+  <li />Supplement 1 : <a href="/lectures/lect02/supplement/mlpi26_lect02_supplement1.pdf">Logistic Regression</a>, <a href="/lectures/lect02/supplement/mlpi26_lect02_nbsup1.pdf">notebook</a>
+  <li />Supplement 2 : <a href="/lectures/lect02/supplement/mlpi26_lect02_supplement2.pdf">SVM and KNN</a>, <a href="/lectures/lect02/supplement/mlpi26_lect02_nbsup2.pdf">notebook</a>
+  <li />Supplement 3 : <a href="/lectures/lect02/supplement/mlpi26_lect02_supplement3.pdf">Decision Trees</a>, <a href="/lectures/lect02/supplement/mlpi26_lect02_nbsup3.pdf">notebook</a>
+</ul>
 
 </ul>
 
