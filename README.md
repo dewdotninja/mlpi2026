@@ -31,4 +31,6 @@ S. Raschka, Y. Liu and V. Mirjalili. [Machine Learning with PyTorch and Scikit-L
   <li /><a href="/labs/lab02/mlpi26_lect02_Lab.ipynb">Lecture 2 Lab :</a> A Tour of Classifiers & Data Preprocessing
 </ul>
 
-**Credits :** The course materials are augmented by Claude to suit the robotics/control/automation areas. 
+<hr>
+
+**Credits :** The <a href="/syllabus/Syllabus_211373_2026_IUP_details.pdf">course syllabus</a> and materials are augmented by Claude to suit the robotics/control/automation areas. 
