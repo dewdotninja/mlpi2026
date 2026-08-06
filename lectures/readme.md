@@ -1,2 +1,2 @@
-### Lecture slides
+### Lecture slides and materials
 
