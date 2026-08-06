@@ -28,7 +28,7 @@ S. Raschka, Y. Liu and V. Mirjalili. [Machine Learning with PyTorch and Scikit-L
 ### Labs
 <ul>
   <li /><a href="/labs/lab01/lect01_Lab.ipynb">Lecture 1 Lab :</a> Toolchain Setup & a First Look at Sensor Data
-  <li /><a href="/labs/lab02/mlpi26_lect02_Lab.ipynb">Lecture 2 Lab :</a> A Tour of Classifiers & Data Preprocessing
+  <li /><a href="/labs/lab02/mlpi26_Lect02_Lab.ipynb">Lecture 2 Lab :</a> A Tour of Classifiers & Data Preprocessing
 </ul>
 
 <hr>
