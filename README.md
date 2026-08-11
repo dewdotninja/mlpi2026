@@ -7,7 +7,6 @@ ElectroMechanical Manufacturing Engineering, Dept. of Mechanical Engineering, Ka
 
 ![mlpi](/figures/mlpi_plan.png) 
 ![mlpi2](/figures/normal_faulty.png) 
-<img src="/figures/normal_faulty.png" width=600 />
 
 <hr>
 
