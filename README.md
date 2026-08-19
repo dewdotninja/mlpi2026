@@ -39,4 +39,10 @@ S. Raschka, Y. Liu and V. Mirjalili. [Machine Learning with PyTorch and Scikit-L
 
 <hr>
 
-**Credits :** The <a href="/syllabus/Syllabus_211373_2026_IUP_details.pdf">course syllabus</a> and materials are augmented by Claude to suit the robotics/control/automation areas. 
+**Credits :** The <a href="/syllabus/Syllabus_211373_2026_IUP_details.pdf">course syllabus</a> and materials follow the main textbook and augmented by Claude to suit the robotics/control/automation areas. 
+
+<div align="center">
+<img src="https://raw.githubusercontent.com/dewdotninja/sharing-github/refs/heads/master/dewninja_logo50.jpg" alt="dewninja"/>
+</div>
+<div align="center">dew.ninja 2025</div>
+
