@@ -44,5 +44,5 @@ S. Raschka, Y. Liu and V. Mirjalili. [Machine Learning with PyTorch and Scikit-L
 <div align="center">
 <img src="https://raw.githubusercontent.com/dewdotninja/sharing-github/refs/heads/master/dewninja_logo50.jpg" alt="dewninja"/>
 </div>
-<div align="center">dew.ninja 2025</div>
+<div align="center">dew.ninja 2026</div>
 
