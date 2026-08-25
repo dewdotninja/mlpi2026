@@ -37,6 +37,12 @@ S. Raschka, Y. Liu and V. Mirjalili. [Machine Learning with PyTorch and Scikit-L
   <li /><a href="/labs/lab03/mlpi26_Lect03_Lab.ipynb">Lecture 3 Lab :</a> Regression Analysis    
 </ul>
 
+### Helpful Materials
+
+<ul>
+  <li /><a href="https://sebastianraschka.com/blog/2021/ml-course.html">Introduction to Machine Learning</a> by <a href="https://sebastianraschka.com/">Sebastian Raschka</a>
+  <li /><a href="https://sebastianraschka.com/teaching/stat453-ss2021/">Introduction to Deep Learning and Generative Modeling</a>by <a href="https://sebastianraschka.com/">Sebastian Raschka</a>
+</ul>
 <hr>
 
 **Credits :** The <a href="/syllabus/Syllabus_211373_2026_IUP_details.pdf">course syllabus</a> and materials follow the main textbook and augmented by Claude to suit the robotics/control/automation areas. 
