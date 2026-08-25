@@ -41,7 +41,7 @@ S. Raschka, Y. Liu and V. Mirjalili. [Machine Learning with PyTorch and Scikit-L
 
 <ul>
   <li /><a href="https://sebastianraschka.com/blog/2021/ml-course.html">Introduction to Machine Learning</a> by <a href="https://sebastianraschka.com/">Sebastian Raschka</a>
-  <li /><a href="https://sebastianraschka.com/teaching/stat453-ss2021/">Introduction to Deep Learning and Generative Modeling</a>by <a href="https://sebastianraschka.com/">Sebastian Raschka</a>
+  <li /><a href="https://sebastianraschka.com/teaching/stat453-ss2021/">Introduction to Deep Learning and Generative Modeling</a> by <a href="https://sebastianraschka.com/">Sebastian Raschka</a>
 </ul>
 <hr>
 
