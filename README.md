@@ -19,17 +19,17 @@ S. Raschka, Y. Liu and V. Mirjalili. [Machine Learning with PyTorch and Scikit-L
 <li />Lecture 1 : <a href="/lectures/lect01/mlpi26_course_intro.pdf">Course Introduction</a>, <a href="/lectures/lect01/mlpi26_lect01.pdf">Foundations & Tooling</a>
 <li />Lecture 2 : <a href="/lectures/lect02/mlpi26_lect02.pdf">A Tour of Classifiers & Data Preprocessing</a>
 <ul>
-  <li />Supplement 1 : <a href="/lectures/lect02/supplement/mlpi26_lect02_supplement1.pdf">Logistic Regression</a>, <a href="/lectures/lect02/supplement/mlpi26_lect02_nbsup1.pdf">notebook</a>
-  <li />Supplement 2 : <a href="/lectures/lect02/supplement/mlpi26_lect02_supplement2.pdf">SVM and KNN</a>, <a href="/lectures/lect02/supplement/mlpi26_lect02_nbsup2.pdf">notebook</a>
-  <li />Supplement 3 : <a href="/lectures/lect02/supplement/mlpi26_lect02_supplement3.pdf">Decision Trees</a>, <a href="/lectures/lect02/supplement/mlpi26_lect02_nbsup3.pdf">notebook</a>
+  <li />Supplement 1 : <a href="/lectures/lect02/supplement/mlpi26_lect02_supplement1.pdf">Logistic Regression</a>, <a href="/lectures/lect02/supplement/mlpi26_lect02_nbsup1.ipynb">notebook</a>
+  <li />Supplement 2 : <a href="/lectures/lect02/supplement/mlpi26_lect02_supplement2.pdf">SVM and KNN</a>, <a href="/lectures/lect02/supplement/mlpi26_lect02_nbsup2.ipynb">notebook</a>
+  <li />Supplement 3 : <a href="/lectures/lect02/supplement/mlpi26_lect02_supplement3.pdf">Decision Trees</a>, <a href="/lectures/lect02/supplement/mlpi26_lect02_nbsup3.ipynb">notebook</a>
 </ul>
 <li />Lecture 3 : <a href="/lectures/lect03/mlpi26_lect03.pdf">Regression Analysis</a>
 <ul>
-  <li />Supplement 1 : <a href="/lectures/lect03/supplement/mlpi26_lect03_supplement1.pdf">Linear Regression</a>, <a href="/lectures/lect03/supplement/mlpi26_lect03_nbsup1.pdf">notebook</a>
+  <li />Supplement 1 : <a href="/lectures/lect03/supplement/mlpi26_lect03_supplement1.pdf">Linear Regression</a>, <a href="/lectures/lect03/supplement/mlpi26_lect03_nbsup1.ipynb">notebook</a>
 </ul>
 <li />Lecture 4 : <a href="/lectures/lect04/mlpi26_lect04.pdf">Ensemble Learning</a>
 <ul>
-  <li />Supplement 1 : <a href="/lectures/lect04/supplement/mlpi26_lect04_supplement1.pdf">Ensemble Learning</a>, <a href="/lectures/lect04/supplement/mlpi26_lect04_nbsup1.pdf">notebook</a>
+  <li />Supplement 1 : <a href="/lectures/lect04/supplement/mlpi26_lect04_supplement1.pdf">Ensemble Learning</a>, <a href="/lectures/lect04/supplement/mlpi26_lect04_nbsup1.ipynb">notebook</a>
 </ul>
 </ul>
 
