@@ -27,9 +27,9 @@ S. Raschka, Y. Liu and V. Mirjalili. [Machine Learning with PyTorch and Scikit-L
 <ul>
   <li />Supplement 1 : <a href="/lectures/lect03/supplement/mlpi26_lect03_supplement1.pdf">Linear Regression</a>, <a href="/lectures/lect03/supplement/mlpi26_lect03_nbsup1.pdf">notebook</a>
 </ul>
-<li />Lecture 4 : <a href="/lectures/lect03/mlpi26_lect04.pdf">Ensemble Learning</a>
+<li />Lecture 4 : <a href="/lectures/lect04/mlpi26_lect04.pdf">Ensemble Learning</a>
 <ul>
-  <li />Supplement 1 : <a href="/lectures/lect03/supplement/mlpi26_lect04_supplement1.pdf">Ensemble Learning</a>, <a href="/lectures/lect03/supplement/mlpi26_lect04_nbsup1.pdf">notebook</a>
+  <li />Supplement 1 : <a href="/lectures/lect04/supplement/mlpi26_lect04_supplement1.pdf">Ensemble Learning</a>, <a href="/lectures/lect04/supplement/mlpi26_lect04_nbsup1.pdf">notebook</a>
 </ul>
 </ul>
 
@@ -38,7 +38,7 @@ S. Raschka, Y. Liu and V. Mirjalili. [Machine Learning with PyTorch and Scikit-L
   <li /><a href="/labs/lab01/mlpi26_Lect01_Lab.ipynb">Lecture 1 Lab :</a> Toolchain Setup & a First Look at Sensor Data
   <li /><a href="/labs/lab02/mlpi26_Lect02_Lab.ipynb">Lecture 2 Lab :</a> A Tour of Classifiers & Data Preprocessing
   <li /><a href="/labs/lab03/mlpi26_Lect03_Lab.ipynb">Lecture 3 Lab :</a> Regression Analysis    
-  <li /><a href="/labs/lab03/mlpi26_Lect04_Lab.ipynb">Lecture 4 Lab :</a> Ensemble Learning    
+  <li /><a href="/labs/lab04/mlpi26_Lect04_Lab.ipynb">Lecture 4 Lab :</a> Ensemble Learning    
 </ul>
 
 ### Useful Links 
