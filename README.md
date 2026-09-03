@@ -6,7 +6,7 @@ ElectroMechanical Manufacturing Engineering, Dept. of Mechanical Engineering, Ka
 **Instructor :** Dr.Varodom Toochinda
 
 ![mlpi](/figures/mlpi_plan.png) 
-![mlpi2](/figures/normal_faulty.png) 
+![mlpi2](/figures/mlpi26_cover.png) 
 
 <hr>
 
