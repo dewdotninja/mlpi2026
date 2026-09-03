@@ -36,7 +36,7 @@ S. Raschka, Y. Liu and V. Mirjalili. [Machine Learning with PyTorch and Scikit-L
   <li />Supplement 1 : <a href="/lectures/lect05/supplement/mlpi26_lect05_supplement1.pdf">Feature Dimensionality Reduction</a>, <a href="/lectures/lect05/supplement/mlpi26_lect05_nbsup1.ipynb">notebook</a>
   <li />Supplement 2 : <a href="/lectures/lect05/supplement/mlpi26_lect05_supplement2.pdf">Clustering Analysis</a>, <a href="/lectures/lect05/supplement/mlpi26_lect05_nbsup2.ipynb">notebook</a>
   <li />Supplement 3 : <a href="/lectures/lect05/supplement/mlpi26_lect05_supplement3.pdf">DBSCAN</a>, notebooks : <a href="/lectures/lect05/supplement/DBSCAN_condition_monitoring.ipynb">condition monitoring</a> , <a href="/lectures/lect05/supplement/dbscan_Sup1_CNC_Spindle.ipynb">CNC spindle</a>, <a href="/lectures/lect05/supplement/dbscan_Sup2_Robot_Joint_Torques.ipynb">Robot joint torques</a>, 
-<a href="/lectures/lect05/supplement/dbscan_Sup3_Wind_Turbine_SCADA.ipynb">Wind turbine SCADDA</a>
+<a href="/lectures/lect05/supplement/dbscan_Sup3_Wind_Turbine_SCADA.ipynb">Wind turbine SCADA</a>
 </ul>  
 </ul>
 
