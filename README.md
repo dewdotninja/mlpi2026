@@ -37,6 +37,10 @@ S. Raschka, Y. Liu and V. Mirjalili. [Machine Learning with PyTorch and Scikit-L
   <li />Supplement 2 : <a href="/lectures/lect05/supplement/mlpi26_lect05_supplement2.pdf">Clustering Analysis</a>, <a href="/lectures/lect05/supplement/mlpi26_lect05_nbsup2.ipynb">notebook</a>
   <li />Supplement 3 : <a href="/lectures/lect05/supplement/mlpi26_lect05_supplement3.pdf">DBSCAN</a>, notebooks : <a href="/lectures/lect05/supplement/DBSCAN_condition_monitoring.ipynb">condition monitoring</a> , <a href="/lectures/lect05/supplement/dbscan_Sup1_CNC_Spindle.ipynb">CNC spindle</a>, <a href="/lectures/lect05/supplement/dbscan_Sup2_Robot_Joint_Torques.ipynb">Robot joint torques</a>, 
 <a href="/lectures/lect05/supplement/dbscan_Sup3_Wind_Turbine_SCADA.ipynb">Wind turbine SCADA</a>
+</ul> 
+<li />Lecture 6 : <a href="/lectures/lect06/mlpi26_lect06.pdf">Model Evaluation & Hyperparameter Tuning</a>
+<ul>
+  <li />Supplement 1 : <a href="/lectures/lect06/supplement/mlpi26_lect06_supplement1.pdf">Model Evaluation, Model Selection and Hyperparameter Tuning</a>, notebooks : <a href="/lectures/lect06/supplement/mlpi26_lect06_nbsup1.ipynb">A worked case study: predicting robot grasp failures on a bin-picking cell</a>, <a href="/lectures/lect06/supplement/mlpi26_lect06_nbsup2.ipynb">Chapter 6 of textbook</a>
 </ul>  
 </ul>
 
@@ -47,6 +51,7 @@ S. Raschka, Y. Liu and V. Mirjalili. [Machine Learning with PyTorch and Scikit-L
   <li /><a href="/labs/lab03/mlpi26_Lect03_Lab.ipynb">Lecture 3 Lab :</a> Regression Analysis    
   <li /><a href="/labs/lab04/mlpi26_Lect04_Lab.ipynb">Lecture 4 Lab :</a> Predictive Maintenance with Ensemble Methods
   <li /><a href="/labs/lab05/mlpi26_Lect05_Lab.ipynb">Lecture 5 Lab :</a>Unsupervised Anomaly Detection on Vibration Spectra 
+    <li /><a href="/labs/lab06/mlpi26_Lect06_Lab.ipynb">Lecture 6 Lab :</a>Model Evaluation, Hyperparameter Tuning
 </ul>
 
 ### Useful Links 
