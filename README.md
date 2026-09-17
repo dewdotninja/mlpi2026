@@ -42,6 +42,10 @@ S. Raschka, Y. Liu and V. Mirjalili. [Machine Learning with PyTorch and Scikit-L
 <ul>
   <li />Supplement 1 : <a href="/lectures/lect06/supplement/mlpi26_lect06_supplement1.pdf">Model Evaluation, Model Selection and Hyperparameter Tuning</a>, notebooks : <a href="/lectures/lect06/supplement/mlpi26_lect06_nbsup1.ipynb">A worked case study: predicting robot grasp failures on a bin-picking cell</a>, <a href="/lectures/lect06/supplement/mlpi26_lect06_nbsup2.ipynb">Chapter 6 of textbook</a>
 </ul>  
+<li />Lecture 7 : <a href="/lectures/lect07/mlpi26_lect06.pdf">From Neural Network Foundations to PyTorch</a>
+<ul>
+  <li />Supplement 1 : <a href="/lectures/lect07/supplement/mlpi26_lect07_supplement1.pdf">Learning the inverse dynamics of a 2-link robot arm</a> <a href="/lectures/lect07/supplement/mlpi26_lect07_nbsup1.ipynb">notebook</a>
+</ul> 
 </ul>
 
 ### Labs
@@ -51,7 +55,8 @@ S. Raschka, Y. Liu and V. Mirjalili. [Machine Learning with PyTorch and Scikit-L
   <li /><a href="/labs/lab03/mlpi26_Lect03_Lab.ipynb">Lecture 3 Lab :</a> Regression Analysis    
   <li /><a href="/labs/lab04/mlpi26_Lect04_Lab.ipynb">Lecture 4 Lab :</a> Predictive Maintenance with Ensemble Methods
   <li /><a href="/labs/lab05/mlpi26_Lect05_Lab.ipynb">Lecture 5 Lab :</a>Unsupervised Anomaly Detection on Vibration Spectra 
-    <li /><a href="/labs/lab06/mlpi26_Lect06_Lab.ipynb">Lecture 6 Lab :</a>Model Evaluation, Hyperparameter Tuning
+  <li /><a href="/labs/lab06/mlpi26_Lect06_Lab.ipynb">Lecture 6 Lab :</a>Model Evaluation, Hyperparameter Tuning
+  <li /><a href="/labs/lab07/mlpi26_Lect07_Lab.ipynb">Lecture 7 Lab :</a>From scikit-learn to PyTorch
 </ul>
 
 ### Useful Links 
