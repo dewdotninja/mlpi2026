@@ -44,7 +44,7 @@ S. Raschka, Y. Liu and V. Mirjalili. [Machine Learning with PyTorch and Scikit-L
 </ul>  
 <li />Lecture 7 : <a href="/lectures/lect07/mlpi26_lect06.pdf">From Neural Network Foundations to PyTorch</a>
 <ul>
-  <li />Supplement 1 : <a href="/lectures/lect07/supplement/mlpi26_lect07_supplement1.pdf">Learning the inverse dynamics of a 2-link robot arm</a> <a href="/lectures/lect07/supplement/mlpi26_lect07_nbsup1.ipynb">notebook</a>
+  <li />Supplement 1 : <a href="/lectures/lect07/supplement/mlpi26_lect07_supplement1.pdf">Learning the inverse dynamics of a 2-link robot arm</a>,  <a href="/lectures/lect07/supplement/mlpi26_lect07_nbsup1.ipynb">notebook</a>
 </ul> 
 </ul>
 
