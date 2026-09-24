@@ -62,9 +62,9 @@ S. Raschka, Y. Liu and V. Mirjalili. [Machine Learning with PyTorch and Scikit-L
   <li /><a href="/labs/lab02/mlpi26_Lect02_Lab.ipynb">Lecture 2 Lab :</a> A Tour of Classifiers & Data Preprocessing
   <li /><a href="/labs/lab03/mlpi26_Lect03_Lab.ipynb">Lecture 3 Lab :</a> Regression Analysis    
   <li /><a href="/labs/lab04/mlpi26_Lect04_Lab.ipynb">Lecture 4 Lab :</a> Predictive Maintenance with Ensemble Methods
-  <li /><a href="/labs/lab05/mlpi26_Lect05_Lab.ipynb">Lecture 5 Lab :</a>Unsupervised Anomaly Detection on Vibration Spectra 
-  <li /><a href="/labs/lab06/mlpi26_Lect06_Lab.ipynb">Lecture 6 Lab :</a>Model Evaluation, Hyperparameter Tuning
-  <li /><a href="/labs/lab07/mlpi26_Lect07_Lab.ipynb">Lecture 7 Lab :</a>From scikit-learn to PyTorch
+  <li /><a href="/labs/lab05/mlpi26_Lect05_Lab.ipynb">Lecture 5 Lab :</a> Unsupervised Anomaly Detection on Vibration Spectra 
+  <li /><a href="/labs/lab06/mlpi26_Lect06_Lab.ipynb">Lecture 6 Lab :</a> Model Evaluation, Hyperparameter Tuning
+  <li /><a href="/labs/lab07/mlpi26_Lect07_Lab.ipynb">Lecture 7 Lab :</a> From scikit-learn to PyTorch
 </ul>
 
 ### Useful Links 
