@@ -42,10 +42,18 @@ S. Raschka, Y. Liu and V. Mirjalili. [Machine Learning with PyTorch and Scikit-L
 <ul>
   <li />Supplement 1 : <a href="/lectures/lect06/supplement/mlpi26_lect06_supplement1.pdf">Model Evaluation, Model Selection and Hyperparameter Tuning</a>, notebooks : <a href="/lectures/lect06/supplement/mlpi26_lect06_nbsup1.ipynb">A worked case study: predicting robot grasp failures on a bin-picking cell</a>, <a href="/lectures/lect06/supplement/mlpi26_lect06_nbsup2.ipynb">Chapter 6 of textbook</a>
 </ul>  
-<li />Lecture 7 : <a href="/lectures/lect07/mlpi26_lect06.pdf">From Neural Network Foundations to PyTorch</a>
+<li />Lecture 7 : <a href="/lectures/lect07/mlpi26_lect07.pdf">From Neural Network Foundations to PyTorch</a>
 <ul>
   <li />Supplement 1 : <a href="/lectures/lect07/supplement/mlpi26_Lect07_supplement1.pdf">Learning the inverse dynamics of a 2-link robot arm</a>,  <a href="/lectures/lect07/supplement/mlpi26_Lect07_nbsup1.ipynb">notebook</a>
 </ul> 
+<li />Lecture 8 : <a href="/lectures/lect08/mlpi26_lect08.pdf">PyTorch Mechanics</a>
+<ul>
+  <li />Supplement 1 : <a href="/lectures/lect08/supplement/mlpi26_Lect08_supplement1.pdf">Going deeper: the mechanics of PyTorch</a>,  <a href="/lectures/lect08/supplement/mlpi26_Lect08_nbsup1.ipynb">notebook</a>
+</ul> 
+<li />Lecture 9 : <a href="/lectures/lect09/mlpi26_lect09.pdf">Convolutional Neural Networks</a>
+<ul>
+  <li />Supplement 1 : <a href="/lectures/lect09/supplement/mlpi26_Lect09_supplement1.pdf">Classifying images with deep convolutional networks</a>,  <a href="/lectures/lect09/supplement/mlpi26_Lect09_nbsup1.ipynb">notebook</a>
+</ul>  
 </ul>
 
 ### Labs
