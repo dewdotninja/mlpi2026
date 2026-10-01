@@ -65,6 +65,7 @@ S. Raschka, Y. Liu and V. Mirjalili. [Machine Learning with PyTorch and Scikit-L
   <li /><a href="/labs/lab05/mlpi26_Lect05_Lab.ipynb">Lecture 5 Lab :</a> Unsupervised Anomaly Detection on Vibration Spectra 
   <li /><a href="/labs/lab06/mlpi26_Lect06_Lab.ipynb">Lecture 6 Lab :</a> Model Evaluation, Hyperparameter Tuning
   <li /><a href="/labs/lab07/mlpi26_Lect07_Lab.ipynb">Lecture 7 Lab :</a> From scikit-learn to PyTorch
+  <li /><a href="/labs/lab08/mlpi26_lect08_Lab.ipynb">Lecture 8 Lab :</a> Spindle Thermal Drift Compensation
 </ul>
 
 ### Useful Links 
