@@ -53,7 +53,11 @@ S. Raschka, Y. Liu and V. Mirjalili. [Machine Learning with PyTorch and Scikit-L
 <li />Lecture 9 : <a href="/lectures/lect09/mlpi26_lect09.pdf">Convolutional Neural Networks</a>
 <ul>
   <li />Supplement 1 : <a href="/lectures/lect09/supplement/mlpi26_Lect09_supplement1.pdf">Classifying images with deep convolutional networks</a>,  <a href="/lectures/lect09/supplement/mlpi26_Lect09_nbsup1.ipynb">notebook</a>
-</ul>  
+</ul>
+<li />Lecture 10 : <a href="/lectures/lect10/mlpi26_lect10.pdf">Recurrent Networks & Sequential Data</a>
+<ul>
+  <li />Supplement 1 : <a href="/lectures/lect10/supplement/mlpi26_lect10_supplement1.pdf">Modeling sequential data with recurrent networks</a>,  <a href="/lectures/lect10/supplement/mlpi26_lect10_nbsup1.ipynb">notebook</a>
+</ul> 
 </ul>
 
 ### Labs
