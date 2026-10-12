@@ -58,6 +58,10 @@ S. Raschka, Y. Liu and V. Mirjalili. [Machine Learning with PyTorch and Scikit-L
 <ul>
   <li />Supplement 1 : <a href="/lectures/lect10/supplement/mlpi26_lect10_supplement1.pdf">Modeling sequential data with recurrent networks</a>,  <a href="/lectures/lect10/supplement/mlpi26_lect10_nbsup1.ipynb">notebook</a>
 </ul> 
+<li />Lecture 11 : <a href="/lectures/lect11/mlpi26_lect11.pdf">Attention & Transformers</a>
+<ul>
+  <li />Supplement 1 : <a href="/lectures/lect11/supplement/mlpi26_lect11_supplement1.pdf">Transformers and attention for machine signals</a>,  <a href="/lectures/lect11/supplement/mlpi26_lect11_nbsup1.ipynb">notebook</a>
+</ul>
 </ul>
 
 ### Labs
