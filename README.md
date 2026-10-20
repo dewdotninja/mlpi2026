@@ -85,6 +85,15 @@ S. Raschka, Y. Liu and V. Mirjalili. [Machine Learning with PyTorch and Scikit-L
   <li /><a href="https://sebastianraschka.com/blog/2021/ml-course.html">Introduction to Machine Learning</a> by <a href="https://sebastianraschka.com/">Sebastian Raschka</a>
   <li /><a href="https://sebastianraschka.com/teaching/stat453-ss2021/">Introduction to Deep Learning and Generative Modeling</a> by <a href="https://sebastianraschka.com/">Sebastian Raschka</a>
 </ul>
+
+### Related Videos from YouTube
+<ul>
+  <li /><a href="https://youtu.be/d02VkQ9MP44?si=osO7Imttt29yQQN-">MIT 6.S191: Recurrent Neural Networks, Transformers, and Attention (2026)</a>
+  <li /><a href="https://youtu.be/KJtZARuO3JY?si=WJ2Wp1i7sFDMvMeT">Grant Sanderson : Visualizing transformers and attention</a> Talk for TNG Big Tech Day ' 24
+  <li /><a href="https://youtu.be/1ij3dweHu-0?si=7h57VBJl01O9FeKV">MIT 6.S191: Reinforcement Learning (2026)</a>
+  
+</ul>
+
 <hr>
 
 **Credits :** The <a href="/syllabus/Syllabus_211373_2026_IUP_details.pdf">course syllabus</a> and materials follow the main textbook and augmented by Claude to suit the robotics/control/automation areas. 
