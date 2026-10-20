@@ -57,11 +57,14 @@ S. Raschka, Y. Liu and V. Mirjalili. [Machine Learning with PyTorch and Scikit-L
 <li />Lecture 10 : <a href="/lectures/lect10/mlpi26_lect10.pdf">Recurrent Networks & Sequential Data</a>
 <ul>
   <li />Supplement 1 : <a href="/lectures/lect10/supplement/mlpi26_lect10_supplement1.pdf">Modeling sequential data with recurrent networks</a>,  <a href="/lectures/lect10/supplement/mlpi26_lect10_nbsup1.ipynb">notebook</a>
+  <li />Supplement 2 : <a href="/lectures/lect10/supplement/mlpi26_lect10_supplement2.pdf">Recurrent networks on a mobile robot</a>,  <a href="/lectures/lect10/supplement/mlpi26_lect10_nbsup2.ipynb">notebook</a>
 </ul> 
 <li />Lecture 11 : <a href="/lectures/lect11/mlpi26_lect11.pdf">Attention & Transformers</a>
 <ul>
   <li />Supplement 1 : <a href="/lectures/lect11/supplement/mlpi26_lect11_supplement1.pdf">Transformers and attention for machine signals</a>,  <a href="/lectures/lect11/supplement/mlpi26_lect11_nbsup1.ipynb">notebook</a>
+  <li />Supplement 2 : <a href="/lectures/lect11/supplement/mlpi26_Lect11_supplement2.pdf">Where attention beats recurrence</a>,  <a href="/lectures/lect11/supplement/mlpi26_Lect11_nbsup2.ipynb">notebook</a>
 </ul>
+<li />Lecture 12 : <a href="/lectures/lect12/mlpi26_lect12.pdf">Reinforcement Learning</a>  
 </ul>
 
 ### Labs
