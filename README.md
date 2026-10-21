@@ -89,6 +89,7 @@ S. Raschka, Y. Liu and V. Mirjalili. [Machine Learning with PyTorch and Scikit-L
 ### Related Videos from YouTube
 <ul>
   <li /><a href="https://youtu.be/KuXjwB4LzSA?si=ub7jWdx5qRoGT6TY">3Blue1Brown But what is a convolution?</a>
+  <li /><a href="https://youtu.be/pqIcoskUuWs?si=GK8k6GxlIL67E21a">MIT 6.S191: Convolutional Neural Networks (2026)</a>
   <li /><a href="https://youtu.be/d02VkQ9MP44?si=osO7Imttt29yQQN-">MIT 6.S191: Recurrent Neural Networks, Transformers, and Attention (2026)</a>
   <li /><a href="https://youtu.be/KJtZARuO3JY?si=WJ2Wp1i7sFDMvMeT">Grant Sanderson : Visualizing transformers and attention</a> Talk for TNG Big Tech Day ' 24
   <li /><a href="https://youtu.be/1ij3dweHu-0?si=7h57VBJl01O9FeKV">MIT 6.S191: Reinforcement Learning (2026)</a>
