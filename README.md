@@ -97,8 +97,8 @@ S. Raschka, Y. Liu and V. Mirjalili. [Machine Learning with PyTorch and Scikit-L
   <ul>
   <li /><a href="https://youtu.be/d02VkQ9MP44?si=osO7Imttt29yQQN-">MIT 6.S191: Recurrent Neural Networks, Transformers, and Attention (2026)</a>
   <li /><a href="https://youtu.be/KJtZARuO3JY?si=WJ2Wp1i7sFDMvMeT">Grant Sanderson : Visualizing transformers and attention</a> Talk for TNG Big Tech Day ' 24
-  <li />Stanford CS231N : Spring 2025<a href="https://youtu.be/RQowiOF_FvQ?si=oMcfx3WWAgghoLlf">Lecture 8: Attention and Transformers</a>
-  <li />MIT 6-7960 : Fall 2024<a href="https://youtu.be/Q1HOKrNeh2M?si=9sUeELOB8MixLTRR">Lec 08. Architectures: Transformers</a>
+  <li />Stanford CS231N : Spring 2025 <a href="https://youtu.be/RQowiOF_FvQ?si=oMcfx3WWAgghoLlf">Lecture 8: Attention and Transformers</a>
+  <li />MIT 6-7960 : Fall 2024 <a href="https://youtu.be/Q1HOKrNeh2M?si=9sUeELOB8MixLTRR">Lec 08. Architectures: Transformers</a>
   </ul>
   <li />Reinforcement Learning
   <ul>
