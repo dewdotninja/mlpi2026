@@ -65,6 +65,9 @@ S. Raschka, Y. Liu and V. Mirjalili. [Machine Learning with PyTorch and Scikit-L
   <li />Supplement 2 : <a href="/lectures/lect11/supplement/mlpi26_Lect11_supplement2.pdf">Where attention beats recurrence</a>,  <a href="/lectures/lect11/supplement/mlpi26_Lect11_nbsup2.ipynb">notebook</a>
 </ul>
 <li />Lecture 12 : <a href="/lectures/lect12/mlpi26_lect12.pdf">Reinforcement Learning</a>  
+<ul>
+  <li />Supplement 1 : <a href="/lectures/lect12/supplement/mlpi26_lect12_supplement1.pdf">Teaching a quadrotor to hover</a>,  <a href="/lectures/lect12/supplement/mlpi26_lect12_nbsup1.ipynb">notebook</a>
+</ul>
 </ul>
 
 ### Labs
