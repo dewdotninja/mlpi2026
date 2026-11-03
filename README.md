@@ -80,6 +80,8 @@ S. Raschka, Y. Liu and V. Mirjalili. [Machine Learning with PyTorch and Scikit-L
   <li /><a href="/labs/lab06/mlpi26_Lect06_Lab.ipynb">Lecture 6 Lab :</a> Model Evaluation, Hyperparameter Tuning
   <li /><a href="/labs/lab07/mlpi26_Lect07_Lab.ipynb">Lecture 7 Lab :</a> From scikit-learn to PyTorch
   <li /><a href="/labs/lab08/mlpi26_lect08_Lab.ipynb">Lecture 8 Lab :</a> Spindle Thermal Drift Compensation
+  <li /><a href="/labs/lab09/mlpi26_Lect09_Lab.ipynb">Lecture 9 Lab :</a> Automated Visual Inspection with CNNs
+  <li /><a href="/labs/lab10/mlpi26_Lect10_Lab.ipynb">Lecture 10 Lab :</a> Forcasting Tool Wear with an LSTM    
 </ul>
 
 ### Useful Links 
@@ -100,7 +102,9 @@ S. Raschka, Y. Liu and V. Mirjalili. [Machine Learning with PyTorch and Scikit-L
   <ul>
   <li /><a href="https://youtu.be/d02VkQ9MP44?si=osO7Imttt29yQQN-">MIT 6.S191: Recurrent Neural Networks, Transformers, and Attention (2026)</a>
   <li /><a href="https://youtu.be/KJtZARuO3JY?si=WJ2Wp1i7sFDMvMeT">Grant Sanderson : Visualizing transformers and attention</a> Talk for TNG Big Tech Day ' 24
+  <li />Stanford CS231N : Spring 2025 <a href="[https://youtu.be/RQowiOF_FvQ?si=oMcfx3WWAgghoLlf](https://youtu.be/kG2lAPBF7zA?si=7x1dJVQWgGjwnn9H)">Lecture 7: Recurrent Neural Networks</a>
   <li />Stanford CS231N : Spring 2025 <a href="https://youtu.be/RQowiOF_FvQ?si=oMcfx3WWAgghoLlf">Lecture 8: Attention and Transformers</a>
+    
   <li />MIT 6-7960 : Fall 2024 <a href="https://youtu.be/Q1HOKrNeh2M?si=9sUeELOB8MixLTRR">Lec 08. Architectures: Transformers</a>
   </ul>
   <li />Reinforcement Learning
