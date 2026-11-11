@@ -68,6 +68,7 @@ S. Raschka, Y. Liu and V. Mirjalili. [Machine Learning with PyTorch and Scikit-L
 <ul>
   <li />Supplement 1 : <a href="/lectures/lect12/supplement/mlpi26_lect12_supplement1.pdf">Teaching a quadrotor to hover</a>,  <a href="/lectures/lect12/supplement/mlpi26_lect12_nbsup1.ipynb">notebook</a>
 </ul>
+<li />Lecture 13 : <a href="/lectures/lect13/mlpi26_lect13.pdf">Deployment & Sim-to-Real</a>
 </ul>
 
 ### Labs
