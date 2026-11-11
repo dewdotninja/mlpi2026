@@ -106,14 +106,19 @@ S. Raschka, Y. Liu and V. Mirjalili. [Machine Learning with PyTorch and Scikit-L
   <li />Stanford CS231N : Spring 2025 <a href="https://youtu.be/RQowiOF_FvQ?si=oMcfx3WWAgghoLlf">Lecture 8: Attention and Transformers</a>
     
   <li />MIT 6-7960 : Fall 2024 <a href="https://youtu.be/Q1HOKrNeh2M?si=9sUeELOB8MixLTRR">Lec 08. Architectures: Transformers</a>
+  <li /><a href="https://youtu.be/VhXLCAWF5o4?si=oidn2QTYTBkuStDN">Transformers Visually Explained</a> by ByteQuest
   </ul>
   <li />Reinforcement Learning
   <ul>
   <li /><a href="https://youtu.be/1ij3dweHu-0?si=7h57VBJl01O9FeKV">MIT 6.S191: Reinforcement Learning (2026)</a>
+  <li /><a href="https://youtube.com/playlist?list=PL58zEckBH8fCt_lYkmayZoR9XfDCW9hte&si=MISdwUi4WreRY4ap">Gymnasium (Deep) Reinforcement Learning</a> by Johnny Code
+  <li /><a href="https://youtube.com/playlist?list=PLO89phzZmnHjYXlCNR_y2qF0gr9x8YpC8&si=bkUvfjcoO-Mq3Cc_">Reinforcement Learning Tutorial</a> by Aleksandar Haber Ph.D
+  <li /><a href="https://youtube.com/playlist?list=PLRYer4Da-4mJfRHI-1EIGNdhLsnwGPlz7&si=5fNH0h7WyO9JsGZ-">Reinforcement Learning by Zach</a> Zachary Huang 
   </ul>
   <li />Full courses 
   <ul>
     <li /><a href="https://ocw.mit.edu/courses/6-7960-deep-learning-fall-2024/">MIT 6.7960 Deep Learning</a> (Fall 2024) 
+    <li /><a href="https://youtube.com/playlist?list=PLkDaE6sCZn6FNC6YRfRQc_FbeQrF8BwGI&si=1aH-AazsbExcztHq">Machine Learning Specialization</a> by Andrew NG
     
   </ul>
 </ul>
