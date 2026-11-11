@@ -84,6 +84,8 @@ S. Raschka, Y. Liu and V. Mirjalili. [Machine Learning with PyTorch and Scikit-L
   <li /><a href="/labs/lab09/mlpi26_Lect09_Lab.ipynb">Lecture 9 Lab :</a> Automated Visual Inspection with CNNs
   <li /><a href="/labs/lab10/mlpi26_Lect10_Lab.ipynb">Lecture 10 Lab :</a> Forcasting Tool Wear with an LSTM 
   <li /><a href="/labs/lab11/mlpi26_Lect11_Lab.ipynb">Lecture 11 Lab :</a> Attention: Finding the Needle in a Long Sequence 
+  <li /><a href="/labs/lab12/mlpi26_Lect12_Lab.ipynb">Lecture 12 Lab :</a> Reinforcement Learning for Robot Control 
+  <li /><a href="/labs/lab13/mlpi26_Lect13_Lab.ipynb">Lecture 13 Lab :</a> Deployment & Sim-to-Real 
 </ul>
 
 ### Useful Links 
