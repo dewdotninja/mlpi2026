@@ -115,6 +115,8 @@ S. Raschka, Y. Liu and V. Mirjalili. [Machine Learning with PyTorch and Scikit-L
   <li /><a href="https://youtube.com/playlist?list=PL58zEckBH8fCt_lYkmayZoR9XfDCW9hte&si=MISdwUi4WreRY4ap">Gymnasium (Deep) Reinforcement Learning</a> by Johnny Code
   <li /><a href="https://youtube.com/playlist?list=PLO89phzZmnHjYXlCNR_y2qF0gr9x8YpC8&si=bkUvfjcoO-Mq3Cc_">Reinforcement Learning Tutorial</a> by Aleksandar Haber Ph.D
   <li /><a href="https://youtube.com/playlist?list=PLRYer4Da-4mJfRHI-1EIGNdhLsnwGPlz7&si=5fNH0h7WyO9JsGZ-">Reinforcement Learning by Zach</a> Zachary Huang 
+  <li /><a href="https://youtube.com/playlist?list=PLzvYlJMoZ02Dxtwe-MmH4nOB5jYlMGBjr&si=eCMaU1yRul_Hl1Rt">Reinforcement Learning by the Book</a> Mutual Information 
+    
   </ul>
   <li />Full courses 
   <ul>
