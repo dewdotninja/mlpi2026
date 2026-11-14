@@ -1,7 +1,7 @@
 # RL for PID tuning on the third-order lag — deck + notebook (generated 2026-11-14)
  
-Plant P(s) = 1/(s+1)^3, parallel PID C(s) = Kp + Ki/s + Kd·s (implemented with a filtered derivative
-Kd·s/(Tf s+1), Tf = Tu/36 ≈ 0.10 s, fixed). Ziegler–Nichols is the baseline the user previously taught.
+Plant $P(s) = 1/(s+1)^3$, parallel PID $C(s) = Kp + Ki/s + Kd·s$ (implemented with a filtered derivative
+Kd·s/(Tf s+1), Tf = Tu/36 ≈ 0.10$ s, fixed). Ziegler–Nichols is the baseline the user previously taught.
 Audience assumed upper-undergraduate engineering (same as the series; not asked). Follows the RL
 quadrotor lecture (`rl-quadrotor-lecture-notes.md`) and reuses its PPO.
  
