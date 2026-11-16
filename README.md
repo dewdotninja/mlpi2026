@@ -72,7 +72,8 @@ S. Raschka, Y. Liu and V. Mirjalili. [Machine Learning with PyTorch and Scikit-L
 <li />Extras  
 <ul>
   <li /><a href="/extras/PID_tuning_with_RL/RL_PID_tuning_lecture.pdf">RL for PID tuning</a>,  <a href="/extras/PID_tuning_with_RL/RL_PID_tuning_third_order_lag.ipynb">notebook</a>
-    <li /><a href="/extras/PPO_deep_dive/PPO_deep_dive_lecture.pdf">Proximal Policy Optimization, from the inside</a>,  <a href="/extras/PPO_deep_dive/PPO_pendulum_quadrotor.ipynb">notebook</a>
+  <li /><a href="/extras/PPO_deep_dive/PPO_deep_dive_lecture.pdf">Proximal Policy Optimization, from the inside</a>,  <a href="/extras/PPO_deep_dive/PPO_pendulum_quadrotor.ipynb">notebook</a>
+  <li /><a href="/extras/DQN_deep_dive/DQN_deep_dive_lecture.pdf">Deep Q-Networks, taken apart</a>,  <a href="/extras/DQN_deep_dive/DQN_cartpole_quadrotor.ipynb">notebook</a>
 </ul>
 </ul>
 
