@@ -133,11 +133,13 @@ S. Raschka, Y. Liu and V. Mirjalili. [Machine Learning with PyTorch and Scikit-L
   <ul>
     <li /><a href="https://youtu.be/v54F4bzFvvc?si=fZkAneDF7Hx9hi5I">Scaling Sim2Real Reinforcement Learning</a> Osbert Bastani, TTIC Colloquium
     <li /><a href="https://youtu.be/ItDjkBmiyc0?si=EdlgEEDtIrPw9WM7">Sim2Real</a> Montreal Robotics
+    <li /><a href="">Lecture 22 Sim2Real and Domain Randomization</a> Pieter Abbeel, CS287-FA19 Advanced Robotics at UC Berkeley
   </ul>
   <li />Full courses 
   <ul>
     <li /><a href="https://ocw.mit.edu/courses/6-7960-deep-learning-fall-2024/">MIT 6.7960 Deep Learning</a> (Fall 2024) 
     <li /><a href="https://youtube.com/playlist?list=PLkDaE6sCZn6FNC6YRfRQc_FbeQrF8BwGI&si=1aH-AazsbExcztHq">Machine Learning Specialization</a> by Andrew NG
+    <li /><a href="https://youtube.com/playlist?list=PLwRJQ4m4UJjNBPJdt8WamRAt4XKc639wF&si=_R6y19Yu_25Hga9S">CS287 Advanced Robotics at UC Berkeley Fall 2019 - Pieter Abbeel
     
   </ul>
 </ul>
