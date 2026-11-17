@@ -139,7 +139,7 @@ S. Raschka, Y. Liu and V. Mirjalili. [Machine Learning with PyTorch and Scikit-L
   <ul>
     <li /><a href="https://ocw.mit.edu/courses/6-7960-deep-learning-fall-2024/">MIT 6.7960 Deep Learning</a> (Fall 2024) 
     <li /><a href="https://youtube.com/playlist?list=PLkDaE6sCZn6FNC6YRfRQc_FbeQrF8BwGI&si=1aH-AazsbExcztHq">Machine Learning Specialization</a> by Andrew NG
-    <li /><a href="https://youtube.com/playlist?list=PLwRJQ4m4UJjNBPJdt8WamRAt4XKc639wF&si=_R6y19Yu_25Hga9S">CS287 Advanced Robotics at UC Berkeley Fall 2019 - Pieter Abbeel
+    <li /><a href="https://youtube.com/playlist?list=PLwRJQ4m4UJjNBPJdt8WamRAt4XKc639wF&si=_R6y19Yu_25Hga9S">CS287 Advanced Robotics at UC Berkeley Fall 2019</a> - Pieter Abbeel
     
   </ul>
 </ul>
