@@ -129,6 +129,11 @@ S. Raschka, Y. Liu and V. Mirjalili. [Machine Learning with PyTorch and Scikit-L
   <li /><a href="https://youtube.com/playlist?list=PLzvYlJMoZ02Dxtwe-MmH4nOB5jYlMGBjr&si=eCMaU1yRul_Hl1Rt">Reinforcement Learning by the Book</a> Mutual Information 
   <li /><a href="https://youtu.be/TjHH_--7l8g?si=KhHxHEka8J5NpHnd">Proximity Policy Optimization (PPO) - How to train Large Language Model</a> Luis Serrano Academy     
   </ul>
+  <li />Sim2Real
+  <ul>
+    <li /><a href="https://youtu.be/v54F4bzFvvc?si=fZkAneDF7Hx9hi5I">Scaling Sim2Real Reinforcement Learning</a> Osbert Bastani, TTIC Colloquium
+    <li /><a href="https://youtu.be/ItDjkBmiyc0?si=EdlgEEDtIrPw9WM7">Sim2Real</a> Montreal Robotics
+  </ul>
   <li />Full courses 
   <ul>
     <li /><a href="https://ocw.mit.edu/courses/6-7960-deep-learning-fall-2024/">MIT 6.7960 Deep Learning</a> (Fall 2024) 
