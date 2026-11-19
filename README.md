@@ -133,7 +133,7 @@ S. Raschka, Y. Liu and V. Mirjalili. [Machine Learning with PyTorch and Scikit-L
   <ul>
     <li /><a href="https://youtu.be/v54F4bzFvvc?si=fZkAneDF7Hx9hi5I">Scaling Sim2Real Reinforcement Learning</a> Osbert Bastani, TTIC Colloquium
     <li /><a href="https://youtu.be/ItDjkBmiyc0?si=EdlgEEDtIrPw9WM7">Sim2Real</a> Montreal Robotics
-    <li /><a href="">Lecture 22 Sim2Real and Domain Randomization</a> Pieter Abbeel, CS287-FA19 Advanced Robotics at UC Berkeley
+    <li /><a href="https://youtu.be/ac_W9IgKX2c?si=O6fYI5LGNDef_73s">Lecture 22 Sim2Real and Domain Randomization</a> Pieter Abbeel, CS287-FA19 Advanced Robotics at UC Berkeley
   </ul>
   <li />Full courses 
   <ul>
