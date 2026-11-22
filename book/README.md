@@ -1,18 +1,15 @@
 # Textbook drafts: Machine Learning for Robotics and Industrial Automation
 
-Chapter drafts expanded from the 2026 lecture supplements, labs and extras, numbered to the 17-chapter outline. Each chapter uses only numbers produced by the companion notebooks and scripts in this repository, and Chapters 7 to 17 end with a "decisive experiment" section: one test designed to catch the model being right for the wrong reason.
+Chapter drafts expanded from the 2026 lecture supplements, labs and extras, numbered to the 17-chapter outline. Each chapter uses only numbers produced by the companion notebooks and scripts in this repository, and Chapters 1, 2 and 7 to 17 end with a "decisive experiment" section: one test designed to catch the model being right for the wrong reason.
 
 | Chapter | Source material |
 |---|---|
+| [1. Machine learning next to control and estimation](chapters/ch01_ml_next_to_control/ch01_ml_next_to_control.md) | Lecture 0 (course intro), Lecture 1, Week 1 cheat sheet, Lab 1; new notebook |
 | [2. Data from machines: sensors, preprocessing and pipelines](chapters/ch02_data_from_machines/ch02_data_from_machines.md) | Lecture 2 (preprocessing half), Week 2 cheat sheet, Lab 2; new notebook |
 | [3. A tour of classifiers](chapters/ch03_classifiers/ch03_classifiers.md) | Lecture 2 supplements 1–3, rewritten with robotics data; new notebook |
 | [4. Regression](chapters/ch04_regression/ch04_regression.md) | Lecture 3 supplement, rewritten with robotics data; new notebook |
 | [5. Ensemble learning](chapters/ch05_ensembles/ch05_ensembles.md) | Lecture 4 supplement, rewritten with robotics data; new notebook |
 | [6. Compressing and grouping machine data](chapters/ch06_unsupervised/ch06_unsupervised.md) | Lecture 5 supplements 1–2, rewritten; DBSCAN notebooks |
-| [3. A tour of classifiers](chapters/ch03_classifiers/ch03_classifiers.md) | Week 2; executed notebook and figures in the chapter folder |
-| [4. Regression](chapters/ch04_regression/ch04_regression.md) | Week 3; executed notebook and figures in the chapter folder |
-| [5. Ensemble learning](chapters/ch05_ensembles/ch05_ensembles.md) | Week 4; executed notebook and figures in the chapter folder |
-| [6. Compressing and grouping machine data](chapters/ch06_unsupervised/ch06_unsupervised.md) | Week 5; executed notebook and figures in the chapter folder |
 | [7. Honest evaluation and tuning](chapters/ch07_honest_evaluation_and_tuning.md) | Lecture 6 and its supplement |
 | [8. Neural networks and PyTorch](chapters/ch08_neural_networks_and_pytorch.md) | Lecture 7 and its supplement |
 | [9. Training craft](chapters/ch09_training_craft.md) | Lecture 8, its supplement, Lab 8 |
@@ -26,5 +23,4 @@ Chapter drafts expanded from the 2026 lecture supplements, labs and extras, numb
 | [16. Deployment and sim-to-real](chapters/ch16_deployment_and_sim_to_real.md) | Lecture 13, Lab 13 |
 | [17. Responsible machine learning](chapters/ch17_responsible_ml.md) | Lecture 14, `lect14_leakage_demo.py` |
 
-Chapter 1 (Lecture 1) is not drafted yet. Chapters 2 to 6 each live in their own folder with an executed companion notebook and generated figures; see [chapters/README_ch02-06.md](chapters/README_ch02-06.md).
-Chapters 1 and 2 are not drafted yet. See [`chapters/README_ch03-06.md`](chapters/README_ch03-06.md) for how the Chapter 3 to 6 folders are organised.
+Chapters 1 to 6 each live in their own folder with an executed companion notebook and generated figures; see [chapters/README_ch02-06.md](chapters/README_ch02-06.md) for how the folders are organised and how to run the notebooks.
