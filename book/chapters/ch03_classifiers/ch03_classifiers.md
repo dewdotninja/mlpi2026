@@ -1,9 +1,9 @@
-# Chapter 2 — A Tour of Classifiers on a Part-Sorting Conveyor
+# Chapter 3 — A Tour of Classifiers on a Part-Sorting Conveyor
 
-> **Companion notebook:** [`ch02_classifiers.ipynb`](ch02_classifiers.ipynb). Every figure
+> **Companion notebook:** [`ch03_classifiers.ipynb`](ch03_classifiers.ipynb). Every figure
 > and number in this chapter is produced by it, and the notebook runs without any download.
 
-## 2.1 The problem: which bin does this part go in?
+## 3.1 The problem: which bin does this part go in?
 
 A conveyor carries a random mix of three zinc-plated steel parts: flat washers, hex nuts and
 flanged bushings. An inspection station above the belt measures four things about every part:
@@ -40,16 +40,16 @@ $$m = \rho\,\frac{\pi}{4}\left(D^2 - d^2\right)h,\qquad \rho = 7.85\ \text{g/cm}
 and adds plating and scale noise. Camera and laser add their own measurement noise. The result
 is 450 parts, 150 of each type.
 
-![Scatter-plot matrix of the four features, coloured by part type](figures/ch02_scatter_matrix.png)
+![Scatter-plot matrix of the four features, coloured by part type](figures/ch03_scatter_matrix.png)
 
-*Figure 2.1 — Every pair of features. Washers (blue) are thin and light and separate from
+*Figure 3.1 — Every pair of features. Washers (blue) are thin and light and separate from
 everything. Nuts (orange) and bushings (green) have nearly the same mass and overlap in height;
 they differ most clearly in hole ratio.*
 
-Looking at Figure 2.1 before training anything already tells us the story of the chapter: any
+Looking at Figure 3.1 before training anything already tells us the story of the chapter: any
 classifier will find the washers; the nut/bushing boundary is where the methods differ.
 
-## 2.2 Preparing the data
+## 3.2 Preparing the data
 
 Two habits, used in every chapter of this book:
 
@@ -68,7 +68,7 @@ into training. On a real cell the scaler you deploy is the one you fitted in the
 parts will not have mean exactly zero — the notebook shows the test-set means after scaling are
 close to, but not exactly, zero.
 
-## 2.3 Logistic regression
+## 3.3 Logistic regression
 
 ### The model
 
@@ -89,9 +89,9 @@ negative logarithm of the likelihood gives the **log-loss** (binary cross-entrop
 
 $$L(\mathbf w,b) = -\frac1n\sum_{i=1}^n\Big[y^{(i)}\log\hat p^{(i)}+(1-y^{(i)})\log\big(1-\hat p^{(i)}\big)\Big].$$
 
-![Sigmoid and log-loss](figures/ch02_sigmoid_logloss.png)
+![Sigmoid and log-loss](figures/ch03_sigmoid_logloss.png)
 
-*Figure 2.2 — Left: the sigmoid maps any net input to a probability. Right: the log-loss for
+*Figure 3.2 — Left: the sigmoid maps any net input to a probability. Right: the log-loss for
 one sample. A confident wrong prediction ($\hat p\to0$ when $y=1$) costs without bound.*
 
 The gradient of the log-loss has a remarkably compact form — prediction error times input —
@@ -103,9 +103,9 @@ so **gradient descent**, $\mathbf w\leftarrow\mathbf w-\eta\,\partial L/\partial
 about twenty lines of NumPy. The notebook implements it as `LogisticRegressionGD` and trains it
 on the hard sub-problem, nut versus bushing, using height and mass.
 
-![Learning-rate comparison and the nut/bushing boundary](figures/ch02_logreg_gd.png)
+![Learning-rate comparison and the nut/bushing boundary](figures/ch03_logreg_gd.png)
 
-*Figure 2.3 — Left: with learning rate 0.01 the loss barely moves in 300 epochs; with 1.0 it
+*Figure 3.3 — Left: with learning rate 0.01 the loss barely moves in 300 epochs; with 1.0 it
 converges quickly. Right: the learned boundary is a tilted straight line.*
 
 The learned weights are about +6.4 for height and −2.2 for mass (standardised units). Taller
@@ -131,14 +131,14 @@ It also applies **L2 regularisation** by default: it minimises the log-loss plus
 proportional to $\lVert\mathbf w\rVert^2$. The parameter `C` is the *inverse* of the penalty
 strength.
 
-![Three-class logistic regression](figures/ch02_logreg_3class.png)
+![Three-class logistic regression](figures/ch03_logreg_3class.png)
 
-*Figure 2.4 — Softmax logistic regression on height and mass. Circled points are test parts.
+*Figure 3.4 — Softmax logistic regression on height and mass. Circled points are test parts.
 Test accuracy with these two features: 0.87.*
 
-![Regularisation path](figures/ch02_reg_path.png)
+![Regularisation path](figures/ch03_reg_path.png)
 
-*Figure 2.5 — Weights of the "bushing" class as `C` varies. Strong regularisation (small `C`)
+*Figure 3.5 — Weights of the "bushing" class as `C` varies. Strong regularisation (small `C`)
 pulls every weight toward zero.*
 
 With all four features the test accuracy jumps from 0.87 to 0.99. The reason is
@@ -146,7 +146,7 @@ With all four features the test accuracy jumps from 0.87 to 0.99. The reason is
 (large hole). **Choosing the right feature mattered more than choosing the right model** — a
 theme that returns in every chapter of this book.
 
-## 2.4 Support vector machines
+## 3.4 Support vector machines
 
 ### Maximum margin
 
@@ -165,9 +165,9 @@ $$\min\ \tfrac12\lVert\mathbf w\rVert^2 + C\sum_i\xi_i.$$
 Large `C` buys fewer violations with a narrower margin; small `C` accepts more violations for a
 wider margin.
 
-![Linear SVM with small and large C](figures/ch02_svm_margin.png)
+![Linear SVM with small and large C](figures/ch03_svm_margin.png)
 
-*Figure 2.6 — Linear SVM on nut vs bushing. Circled points are support vectors; dashed lines
+*Figure 3.6 — Linear SVM on nut vs bushing. Circled points are support vectors; dashed lines
 are the margin. With `C = 0.01` the margin swallows almost all the data and the boundary lands
 in the wrong place (test accuracy 0.67). With `C = 10` it agrees with logistic regression (0.80).*
 
@@ -184,11 +184,11 @@ $$|L_1-L_2|\le r\le L_1+L_2,$$
 so the reachable set is an **annulus**. We ask a classifier to learn "reachable / unreachable"
 from labelled $(x,y)$ samples, with a little label noise near the edges to mimic calibration
 error. No straight line can separate a ring from its inside and outside — the linear SVM in
-Figure 2.7 scores 54 %, the same as always guessing the majority class.
+Figure 3.7 scores 54 %, the same as always guessing the majority class.
 
-![Linear and RBF SVMs on the workspace problem](figures/ch02_svm_workspace.png)
+![Linear and RBF SVMs on the workspace problem](figures/ch03_svm_workspace.png)
 
-*Figure 2.7 — Dotted circles are the true inner and outer reach. From left to right: linear SVM;
+*Figure 3.7 — Dotted circles are the true inner and outer reach. From left to right: linear SVM;
 RBF SVM with γ = 1 (too smooth), γ = 30 (close to the truth), γ = 2000 (overfitted islands).*
 
 ### The kernel trick
@@ -203,12 +203,12 @@ $$k\big(\mathbf x^{(i)},\mathbf x^{(j)}\big)=\exp\!\Big(-\gamma\,\big\lVert\math
 ever computing the new features. In that space the ring is linearly separable.
 
 You can see the idea with a single hand-made feature: add $x^2+y^2$ and the annulus becomes a
-horizontal slab, separable by two thresholds (Figure 2.8). The RBF kernel finds such features
+horizontal slab, separable by two thresholds (Figure 3.8). The RBF kernel finds such features
 automatically.
 
-![Lifting the data with one extra feature](figures/ch02_kernel_lift.png)
+![Lifting the data with one extra feature](figures/ch03_kernel_lift.png)
 
-*Figure 2.8 — With the extra feature $x^2+y^2$ the reachable points lie between two horizontal
+*Figure 3.8 — With the extra feature $x^2+y^2$ the reachable points lie between two horizontal
 lines.*
 
 The parameter $\gamma$ sets how far each training point's influence reaches. Small $\gamma$ gives
@@ -216,9 +216,9 @@ smooth boundaries that may be too simple (γ = 1 cannot bend tightly around the 
 test accuracy 0.92). Moderate $\gamma$ recovers the annulus (γ = 30, test 0.96). Very large
 $\gamma$ gives every training point its own island: training accuracy is perfect and test
 accuracy collapses to 0.70. That is **overfitting**, and $\gamma$ and `C` are the
-**hyperparameters** that control it. Chapter 6 shows how to choose them systematically.
+**hyperparameters** that control it. Chapter 7 shows how to choose them systematically.
 
-## 2.5 Decision trees
+## 3.5 Decision trees
 
 A decision tree classifies by asking a sequence of yes/no questions about single features —
 "is mass ≤ 11 g?" — exactly as a PLC programmer would write a sorting rule by hand.
@@ -241,9 +241,9 @@ $$IG=I(D_p)-\frac{N_\text{left}}{N_p}I(D_\text{left})-\frac{N_\text{right}}{N_p}
 
 and the tree greedily takes the best split at every node.
 
-![Impurity measures](figures/ch02_impurity.png)
+![Impurity measures](figures/ch03_impurity.png)
 
-*Figure 2.9 — For two classes, all three measures are zero for a pure node and peak at a 50/50
+*Figure 3.9 — For two classes, all three measures are zero for a pure node and peak at a 50/50
 mix. Entropy and Gini behave almost identically; classification error is less sensitive to
 changes in the class mix and is rarely used for growing trees.*
 
@@ -252,28 +252,28 @@ changes in the class mix and is rarely used for growing trees.*
 Because each split compares one feature with a threshold, trees **do not need feature
 scaling**, and their rules come out in the units the operator knows.
 
-![Depth-3 decision tree on height and mass](figures/ch02_tree.png)
+![Depth-3 decision tree on height and mass](figures/ch03_tree.png)
 
-*Figure 2.10 — Left: the boundary of a depth-3 tree is made of axis-parallel rectangles.
+*Figure 3.10 — Left: the boundary of a depth-3 tree is made of axis-parallel rectangles.
 Right: the tree itself. The first question, mass ≤ 11 g, separates every washer.*
 
 ### Depth controls complexity
 
 An unrestricted tree keeps splitting until every leaf is pure, which memorises the training set.
-Figure 2.11 shows the usual picture: training accuracy rises to 100 % with depth, test accuracy
+Figure 3.11 shows the usual picture: training accuracy rises to 100 % with depth, test accuracy
 peaks early and then falls slightly.
 
-![Accuracy versus tree depth](figures/ch02_tree_depth.png)
+![Accuracy versus tree depth](figures/ch03_tree_depth.png)
 
-*Figure 2.11 — Train and test accuracy against `max_depth`, all four features.*
+*Figure 3.11 — Train and test accuracy against `max_depth`, all four features.*
 
 A tree also reports **feature importances** — how much each feature reduced impurity across all
 its splits. For a depth-4 tree on all four features, mass and hole ratio carry over 90 % of the
 importance. Single trees are unstable, however: a few changed training parts can change the
 splits completely. Averaging many randomised trees — a **random forest** — is the subject of
-Chapter 4.
+Chapter 5.
 
-## 2.6 k-nearest neighbours
+## 3.6 k-nearest neighbours
 
 The k-nearest-neighbour (k-NN) classifier does no training at all. To classify a new part it
 finds the $k$ training parts closest to it and takes a majority vote. It is the clearest example
@@ -284,18 +284,18 @@ Euclidean distance, adds up squared differences in each feature, so **the featur
 largest numeric range dominates**. On raw features — mass spans about 25 g, hole ratio about
 0.3 — k-NN reaches 0.87 test accuracy; after standardisation, 0.99.
 
-![k-NN boundaries and accuracy versus k](figures/ch02_knn.png)
+![k-NN boundaries and accuracy versus k](figures/ch03_knn.png)
 
-*Figure 2.12 — Height and mass only. With k = 1 the boundary follows every training point;
+*Figure 3.12 — Height and mass only. With k = 1 the boundary follows every training point;
 with k = 25 it is smooth. Right: training accuracy falls as k grows, test accuracy peaks at a
 moderate k.*
 
 Two practical cautions. **Prediction cost grows with the training set**, because every
 prediction searches all stored samples — significant when a diverter has a 10 ms window and you
 have millions of logged parts. And with many features, the **curse of dimensionality** makes
-"nearest" neighbours stop being near; Chapter 5 shows how to compress features first.
+"nearest" neighbours stop being near; Chapter 6 shows how to compress features first.
 
-## 2.7 Head-to-head
+## 3.7 Head-to-head
 
 The notebook finally trains all four classifiers on all four features with the same split, with
 scaling placed inside a `Pipeline` so it is always fitted on the training data:
@@ -308,9 +308,9 @@ scaling placed inside a `Pipeline` so it is always fitted on the training data:
 | decision tree (depth 4) | 0.978 | 0.978 |
 | k-NN (k = 9) | 0.975 | 0.993 |
 
-![Confusion matrix](figures/ch02_confusion.png)
+![Confusion matrix](figures/ch03_confusion.png)
 
-*Figure 2.13 — Logistic regression on the test set: one hex nut sorted as a bushing, every
+*Figure 3.13 — Logistic regression on the test set: one hex nut sorted as a bushing, every
 other part correct.*
 
 With the right features, every classifier sorts almost perfectly, and the remaining errors are

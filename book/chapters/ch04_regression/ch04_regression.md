@@ -1,9 +1,9 @@
-# Chapter 3 — Regression: Predicting Spindle Power on a CNC Mill
+# Chapter 4 — Regression: Predicting Spindle Power on a CNC Mill
 
-> **Companion notebook:** [`ch03_regression.ipynb`](ch03_regression.ipynb). Every figure and
+> **Companion notebook:** [`ch04_regression.ipynb`](ch04_regression.ipynb). Every figure and
 > number in this chapter comes from it; it needs no download.
 
-## 3.1 The problem
+## 4.1 The problem
 
 A machining cell logs every cut its 3-axis mill makes: the cutting parameters the CAM program
 commanded, the workpiece material, the measured flank wear of the tool at its last check, and the
@@ -38,15 +38,15 @@ a self-excited vibration that inflates the measured power by 40–120 %. It prod
 cuts with the columns `material`, `spindle_rpm`, `feed_mm_min`, `depth_mm`, `width_mm`,
 `tool_wear_um`, `coolant` and the target `power_W`.
 
-## 3.2 Exploring the data
+## 4.2 Exploring the data
 
-![Scatter-plot matrix](figures/ch03_scatter_matrix.png)
+![Scatter-plot matrix](figures/ch04_scatter_matrix.png)
 
-*Figure 3.1 — Pairwise scatter plots; blue = aluminium, orange = steel.*
+*Figure 4.1 — Pairwise scatter plots; blue = aluminium, orange = steel.*
 
-![Correlation matrix](figures/ch03_corr.png)
+![Correlation matrix](figures/ch04_corr.png)
 
-*Figure 3.2 — Pearson correlation between the numeric columns.*
+*Figure 4.2 — Pearson correlation between the numeric columns.*
 
 The two exploratory plots already teach two lessons.
 
@@ -56,7 +56,7 @@ The two exploratory plots already teach two lessons.
    power. Power depends on the *product* depth × width × feed, and the Pearson coefficient only
    measures linear association with one variable at a time.
 
-## 3.3 Simple linear regression
+## 4.3 Simple linear regression
 
 Start with aluminium cuts and one feature, the MRR in cm³/min. The model is a straight line,
 
@@ -66,9 +66,9 @@ and the parameters are chosen to minimise the **mean squared error**
 
 $$L(w,b)=\frac{1}{2n}\sum_{i=1}^n\big(y^{(i)}-\hat y^{(i)}\big)^2.$$
 
-![Aluminium cuts: power versus MRR](figures/ch03_alu_scatter.png)
+![Aluminium cuts: power versus MRR](figures/ch04_alu_scatter.png)
 
-*Figure 3.3 — 295 aluminium cuts. The chatter cuts (orange crosses) are marked using the
+*Figure 4.3 — 295 aluminium cuts. The chatter cuts (orange crosses) are marked using the
 simulator's hidden truth; the real cell would not know which they are.*
 
 ### Gradient descent
@@ -79,15 +79,15 @@ $$\frac{\partial L}{\partial w}=-\frac1n\sum_i\big(y^{(i)}-\hat y^{(i)}\big)x^{(
 \frac{\partial L}{\partial b}=-\frac1n\sum_i\big(y^{(i)}-\hat y^{(i)}\big),$$
 
 and gradient descent steps against them. The notebook's `LinearRegressionGD` class is the same
-twenty lines as Chapter 2's logistic regression with the sigmoid removed — the error-times-input
+twenty lines as Chapter 3's logistic regression with the sigmoid removed — the error-times-input
 update is identical.
 
 Both the input and the target must be **standardised** for gradient descent here: MRR is in the
 tens and power in the thousands, and a single learning rate cannot suit both.
 
-![Gradient descent convergence and fitted line](figures/ch03_gd_fit.png)
+![Gradient descent convergence and fitted line](figures/ch04_gd_fit.png)
 
-*Figure 3.4 — The loss falls in a few dozen epochs; the fitted line in standardised units.*
+*Figure 4.4 — The loss falls in a few dozen epochs; the fitted line in standardised units.*
 
 ### The slope is a physical constant
 
@@ -98,7 +98,7 @@ $0.8/0.85 = 0.94$ J/mm³, and at the average tool wear and coolant use of the lo
 The remaining difference is the pull of the chatter cuts — see §3.5. A regression slope you can
 check against a machining handbook is a powerful sanity test.
 
-## 3.4 The normal equations
+## 4.4 The normal equations
 
 Least squares has a closed-form solution. Append a column of ones to the data matrix $X$ so the
 bias becomes one more weight, $\boldsymbol\theta=[b,w]^\top$. Setting the gradient of
@@ -112,7 +112,7 @@ faster and numerically safer. Gradient descent, the normal equations and scikit-
 
 Why learn gradient descent at all, then? Because the normal equations need a $d\times d$ solve —
 impractical for millions of features — and because they exist only for linear least squares.
-Every neural network from Chapter 7 onward is trained by gradient descent.
+Every neural network from Chapter 8 onward is trained by gradient descent.
 
 ### A probabilistic view
 
@@ -126,7 +126,7 @@ so **maximising likelihood is exactly minimising squared error**. That also expl
 squares' weakness: the Gaussian assumption says large errors are extremely unlikely, so the fit
 bends hard to accommodate any that occur.
 
-## 3.5 Outliers and RANSAC
+## 4.5 Outliers and RANSAC
 
 The chatter cuts are such large errors. **RANSAC** (RANdom SAmple Consensus) makes the fit robust:
 
@@ -134,9 +134,9 @@ The chatter cuts are such large errors. **RANSAC** (RANdom SAmple Consensus) mak
 2. count the **inliers** — points whose residual is below a threshold;
 3. repeat many times and keep the fit with the most inliers, refitted on all of them.
 
-![OLS versus RANSAC](figures/ch03_ransac.png)
+![OLS versus RANSAC](figures/ch04_ransac.png)
 
-*Figure 3.5 — RANSAC (solid) versus ordinary least squares (dashed). Orange crosses are the
+*Figure 4.5 — RANSAC (solid) versus ordinary least squares (dashed). Orange crosses are the
 points RANSAC rejected.*
 
 With a 150 W residual threshold (about three times the measurement noise at mid-range power),
@@ -146,7 +146,7 @@ false alarms are cuts where the combined effect of tool wear and 4 % measurement
 the residual past the threshold — a single line through MRR cannot account for wear. That outlier list is a useful
 by-product: those are the cuts a process engineer should look at.
 
-## 3.6 Multiple regression and how to judge it
+## 4.6 Multiple regression and how to judge it
 
 Now use all 500 cuts and all seven raw columns, with `material` encoded as a 0/1 indicator
 `steel`:
@@ -169,9 +169,9 @@ remaining in the data cost every squared-error metric a great deal.
 A single score hides *how* a model is wrong. The **residual plot** — prediction error against
 prediction — shows it.
 
-![Residuals of the raw-feature model](figures/ch03_resid_raw.png)
+![Residuals of the raw-feature model](figures/ch04_resid_raw.png)
 
-*Figure 3.6 — Residuals of the seven-raw-feature model form an arch, plus a long tail of chatter
+*Figure 4.6 — Residuals of the seven-raw-feature model form an arch, plus a long tail of chatter
 cuts far below zero.*
 
 A good model leaves residuals scattered evenly around zero with no structure. Here they form an
@@ -179,7 +179,7 @@ arch: the model over-predicts mid-range cuts and under-predicts the lightest and
 model is **misspecified**: it tries to express a product of features as a sum, and no choice of
 weights can fix that.
 
-## 3.7 Features from physics
+## 4.7 Features from physics
 
 The physics tells us which features to build:
 
@@ -192,9 +192,9 @@ The physics tells us which features to build:
 The model is still **linear in its weights**, so it is still linear regression and still solved by
 the normal equations; only the inputs changed.
 
-![Residuals of the physics-feature model](figures/ch03_resid_phys.png)
+![Residuals of the physics-feature model](figures/ch04_resid_phys.png)
 
-*Figure 3.7 — With physics features the residuals of normal cuts are structureless noise; only
+*Figure 4.7 — With physics features the residuals of normal cuts are structureless noise; only
 the chatter cuts stand out.*
 
 | model | test MAE (W) | test $R^2$ | test $R^2$, normal cuts only |
@@ -216,7 +216,7 @@ The lesson is not "never use a random forest". It is that **knowing the process 
 powerful modelling tool you have**, and that a model whose parameters you can check is a model
 you can trust.
 
-## 3.8 Regularisation: Ridge and Lasso
+## 4.8 Regularisation: Ridge and Lasso
 
 With many or correlated features, least-squares weights become large and unstable. Adding a
 penalty on the weights helps:
@@ -232,9 +232,9 @@ The penalty treats every weight alike, so **features must be standardised** firs
 To see Lasso select features, the notebook hands it a bloated candidate set: all 28 pairwise
 products of the raw columns.
 
-![Lasso path](figures/ch03_lasso.png)
+![Lasso path](figures/ch04_lasso.png)
 
-*Figure 3.8 — As the Lasso penalty α grows, features are switched off one by one (left); test
+*Figure 4.8 — As the Lasso penalty α grows, features are switched off one by one (left); test
 $R^2$ degrades slowly at first, then collapses (right).*
 
 At α = 20, Lasso keeps eight products, and the largest weights go to depth × width,
@@ -243,7 +243,7 @@ material interaction. Pairwise products cannot express the full three-way produc
 not match the physics model; but without being told any physics it points straight at where the
 structure is. That makes it a useful exploratory tool when you do *not* know the process well.
 
-## 3.9 Nonlinear relationships: locally weighted regression
+## 4.9 Nonlinear relationships: locally weighted regression
 
 Some relationships are not linear in any small set of features. A classic in robotics is the
 **friction torque of a joint** as a function of its velocity, the **Stribeck curve**:
@@ -261,12 +261,12 @@ weighting each training sample by its distance from the query:
 $$w^{(i)}=\exp\!\left(-\frac{\big(x^{(i)}-x_q\big)^2}{2\tau^2}\right),\qquad
 \boldsymbol\theta(x_q)=\big(X^\top WX\big)^{-1}X^\top W\mathbf y.$$
 
-![LWR on the Stribeck friction curve](figures/ch03_lwr.png)
+![LWR on the Stribeck friction curve](figures/ch04_lwr.png)
 
-*Figure 3.9 — Measured joint friction (grey), a single global line (dashed), and LWR with three
+*Figure 4.9 — Measured joint friction (grey), a single global line (dashed), and LWR with three
 bandwidths.*
 
-The bandwidth $\tau$ plays the role that `gamma` played for the RBF SVM in Chapter 2:
+The bandwidth $\tau$ plays the role that `gamma` played for the RBF SVM in Chapter 3:
 
 * $\tau$ = 0.01 — each local fit sees a handful of points; the curve follows the noise;
 * $\tau$ = 0.05 — captures the stiction peak and the viscous slope;

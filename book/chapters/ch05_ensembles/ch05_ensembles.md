@@ -1,10 +1,10 @@
-# Chapter 4 — Ensemble Learning: Diagnosing a Robot Wrist Gearbox
+# Chapter 5 — Ensemble Learning: Diagnosing a Robot Wrist Gearbox
 
-> **Companion notebook:** [`ch04_ensembles.ipynb`](ch04_ensembles.ipynb). Every figure and
+> **Companion notebook:** [`ch05_ensembles.ipynb`](ch05_ensembles.ipynb). Every figure and
 > number in this chapter comes from it; it needs no download. XGBoost is used if installed;
 > otherwise the notebook falls back to scikit-learn's `HistGradientBoostingClassifier`.
 
-## 4.1 The problem
+## 5.1 The problem
 
 The wrist joints of a 6-axis industrial robot carry compact, heavily loaded gearboxes. When one
 fails in production the line stops. The two most common root causes, **bearing outer-race
@@ -37,9 +37,9 @@ from healthy ones. The night-to-night variation in load and speed of the test mo
 vibration energy together, which makes the features correlated. There are 160 recordings per
 class.
 
-![Distributions of four indicators](figures/ch04_feature_hists.png)
+![Distributions of four indicators](figures/ch05_feature_hists.png)
 
-*Figure 4.1 — Each fault raises its own indicators (kurtosis and bearing-band energy for bearing
+*Figure 5.1 — Each fault raises its own indicators (kurtosis and bearing-band energy for bearing
 wear; sideband and 2× energy for gear wear), but every histogram overlaps with "healthy": those
 are the incipient faults.*
 
@@ -48,7 +48,7 @@ one that is better than any of them. This chapter explains why that works and co
 methods used in practice: majority voting, bagging, boosting (AdaBoost and gradient boosting),
 random forests and stacking.
 
-## 4.2 Why ensembles work
+## 5.2 Why ensembles work
 
 Suppose $n$ classifiers each have error rate $\varepsilon$ and make their mistakes
 **independently**. A majority vote is wrong only when more than half of them are wrong at once:
@@ -58,15 +58,15 @@ $$\varepsilon_\text{ens}=\sum_{k=\lceil n/2\rceil}^{n}\binom{n}{k}\varepsilon^k(
 For eleven classifiers that are each wrong 25 % of the time, the vote is wrong only 3.4 % of the
 time.
 
-![Ensemble error versus base error](figures/ch04_ensemble_error.png)
+![Ensemble error versus base error](figures/ch05_ensemble_error.png)
 
-*Figure 4.2 — Majority-vote error against the error of each base classifier, assuming independent
+*Figure 5.2 — Majority-vote error against the error of each base classifier, assuming independent
 errors.*
 
 The formula carries two conditions, and every ensemble method is designed around them:
 
 1. **Each member must beat chance** ($\varepsilon<0.5$). To the right of the crossing point in
-   Figure 4.2, voting makes things worse.
+   Figure 5.2, voting makes things worse.
 2. **The members' errors must be independent** — or at least not identical. Ten copies of one
    model make the same mistakes and gain nothing.
 
@@ -74,7 +74,7 @@ The methods differ in *how they create diversity*: different algorithms or diffe
 (voting), different bootstrap samples (bagging, random forests), re-weighted samples (AdaBoost),
 or models trained on one another's residuals (gradient boosting).
 
-## 4.3 Majority voting
+## 5.3 Majority voting
 
 The first question a maintenance planner asks is simply *is this gearbox healthy or not?*, so we
 start with that binary task. Three deliberately simple base models each see a different symptom:
@@ -98,17 +98,17 @@ scikit-learn; `sklearn.ensemble.VotingClassifier(voting="soft")` does the same.
 | k-NN (4 band energies) | 0.967 ± 0.010 |
 | **soft majority vote** | **0.975 ± 0.015** |
 
-![ROC curves](figures/ch04_vote_roc.png)
+![ROC curves](figures/ch05_vote_roc.png)
 
-*Figure 4.3 — Test-set ROC curves. The vote dominates the low-false-alarm corner.*
+*Figure 5.3 — Test-set ROC curves. The vote dominates the low-false-alarm corner.*
 
 The vote beats every member in cross-validation, including the strong k-NN, because each member
 sees a different symptom and their mistakes are only partly correlated. On the small test set
 it ties k-NN on AUC but dominates the region of few false alarms — which is where a maintenance
 planner works, because every false alarm costs a technician's visit. (ROC curves and AUC are
-treated fully in Chapter 6.)
+treated fully in Chapter 7.)
 
-## 4.4 Bagging
+## 5.4 Bagging
 
 **Bagging** (bootstrap aggregating) trains the *same* algorithm many times, each time on a
 **bootstrap sample** — $n$ samples drawn *with replacement* from the $n$ training samples, so each
@@ -122,16 +122,16 @@ that variability.
 To see the effect we use the hardest pair of classes, healthy versus gear wear, and two
 features, sideband energy and 2× shaft energy.
 
-![Single tree versus bagging](figures/ch04_bagging.png)
+![Single tree versus bagging](figures/ch05_bagging.png)
 
-*Figure 4.4 — Left: one unpruned tree, a patchwork of thin slivers around individual points
+*Figure 5.4 — Left: one unpruned tree, a patchwork of thin slivers around individual points
 (test accuracy 0.854). Right: 500 bagged trees, a smoother boundary (0.885).*
 
 Both models classify every training sample correctly, but bagging generalises better. Bagging
 does **not** reduce bias: bagging a stump still gives a stump-like boundary. For that we need
 boosting.
 
-## 4.5 Adaptive boosting (AdaBoost)
+## 5.5 Adaptive boosting (AdaBoost)
 
 Boosting reverses the strategy. It starts from **weak learners** with high bias — typically
 stumps — and trains them **sequentially**, each one concentrating on the samples its predecessors
@@ -162,9 +162,9 @@ is forced to deal with them.
 
 ### AdaBoost in scikit-learn
 
-![One stump versus AdaBoost](figures/ch04_adaboost.png)
+![One stump versus AdaBoost](figures/ch05_adaboost.png)
 
-*Figure 4.5 — Left: one stump draws a single vertical line (test accuracy 0.885). Right: 500
+*Figure 5.5 — Left: one stump draws a single vertical line (test accuracy 0.885). Right: 500
 boosted stumps draw a staircase using both features (0.917).*
 
 A stump can draw only one axis-parallel line. AdaBoost's weighted sum of 500 stumps draws a
@@ -172,7 +172,7 @@ boundary that uses both features — lower bias than a stump, and here better te
 both the single stump and the bagged trees. The `learning_rate` parameter shrinks each
 $\alpha_j$; smaller values need more learners but usually generalise better.
 
-## 4.6 Gradient boosting and XGBoost
+## 5.6 Gradient boosting and XGBoost
 
 **Gradient boosting** also builds trees sequentially, but rather than re-weighting samples, each
 new tree is fitted to the **negative gradient of the loss** with respect to the current model's
@@ -186,12 +186,12 @@ classification the trees fit gradients of the log-loss on the log-odds scale.
 
 From here on we use the full three-class problem and all 13 features.
 
-![Gradient boosting staged accuracy](figures/ch04_gbm_staged.png)
+![Gradient boosting staged accuracy](figures/ch05_gbm_staged.png)
 
-*Figure 4.6 — Training accuracy keeps rising as trees are added; test accuracy plateaus after
+*Figure 5.6 — Training accuracy keeps rising as trees are added; test accuracy plateaus after
 roughly 100 trees.*
 
-The gap in Figure 4.6 is the reason gradient boosting needs care: given enough trees it will
+The gap in Figure 5.6 is the reason gradient boosting needs care: given enough trees it will
 memorise the training set. The levers are the number of trees (or early stopping on a validation
 set), the learning rate, tree depth, and `subsample` < 1, which trains each tree on a random
 subset of the data (*stochastic* gradient boosting).
@@ -201,7 +201,7 @@ regularisation of the leaf values, fast histogram-based split finding, column su
 good defaults. It and its relatives (LightGBM, CatBoost, scikit-learn's
 `HistGradientBoostingClassifier`) are the standard first choice for tabular industrial data.
 
-## 4.7 Random forests and feature importance
+## 5.7 Random forests and feature importance
 
 A **random forest** is bagging of deep decision trees with one extra source of diversity: at each
 split, a tree may choose only among a **random subset of the features** (by default $\sqrt{m}$ of
@@ -217,9 +217,9 @@ A forest can also report which features it relied on:
 * **permutation importance** shuffles one feature in the *test* set and measures the drop in
   accuracy. It is slower but measures what the model actually uses on new data.
 
-![Random forest feature importance](figures/ch04_rf_importance.png)
+![Random forest feature importance](figures/ch05_rf_importance.png)
 
-*Figure 4.7 — Impurity-based (left) and permutation (right) importance of the 13 indicators.*
+*Figure 5.7 — Impurity-based (left) and permutation (right) importance of the 13 indicators.*
 
 The forest has rediscovered vibration-analysis practice: **bearing-band energy** and **sideband
 energy** — the first two indicators a vibration analyst checks — come out on top, followed by the
@@ -232,7 +232,7 @@ forest can use the others. A low permutation importance therefore does **not** m
 useless — only that its information is available elsewhere. Think twice before removing hardware
 on that evidence.
 
-## 4.8 Stacking, and the comparison
+## 5.8 Stacking, and the comparison
 
 **Stacking** trains a **meta-learner** on the predictions of several base models. If the
 meta-learner were trained on predictions the base models made for their own training data, it
@@ -255,9 +255,9 @@ training set and a final check on the test set:
 | soft vote (LR, SVM, RF) | 0.926 | 0.016 | 0.951 |
 | stacking (LR, SVM, RF → LR) | 0.920 | 0.015 | 0.958 |
 
-![Stacking confusion matrix](figures/ch04_confusion.png)
+![Stacking confusion matrix](figures/ch05_confusion.png)
 
-*Figure 4.8 — Confusion matrix of the stacked model on the test set. Five of its six errors are faulty gearboxes called healthy.*
+*Figure 5.8 — Confusion matrix of the stacked model on the test set. Five of its six errors are faulty gearboxes called healthy.*
 
 Read the table with the cross-validation spread in mind: differences of one or two percentage
 points between the good models are within noise for a data set of this size. The robust
@@ -269,7 +269,7 @@ conclusions are:
   nobody engineered by hand.
 * **The remaining errors are mostly incipient faults labelled healthy.** No algorithm can detect a
   fault that has not yet changed the signal. The way forward is a better sensor, or a model that
-  follows the *trend* over several nights (Chapter 10) — not a larger ensemble.
+  follows the *trend* over several nights (Chapter 11) — not a larger ensemble.
 
 ## Summary
 
