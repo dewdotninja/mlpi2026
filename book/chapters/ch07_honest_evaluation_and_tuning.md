@@ -154,7 +154,7 @@ For a scaler on 1000 rows the bias is small, because a mean and a standard devia
 
 ### 7.3.3 When rows are not independent
 
-Cross-validation assumes rows are exchangeable. On real cells they often are not. Picks of the same part type, samples from the same shift, or windows cut from the same machine run are near-duplicates. If near-duplicates land on both sides of a fold boundary, the model is validated on data it has effectively already seen, and the score describes how well it remembers rather than how well it generalises to a new part. Split by group with `GroupKFold` or `StratifiedGroupKFold`, using the variable that defines "new" in deployment: part type, machine, batch or day. Exercise 7 shows how much the estimate drops when you do. Chapter 11 returns to the same problem for time series, where the group is time itself, and Chapter 17 treats it as one of the five recurring failure modes of applied ML.
+Cross-validation assumes rows are exchangeable. On real cells they often are not. Picks of the same part type, samples from the same shift, or windows cut from the same machine run are near-duplicates. If near-duplicates land on both sides of a fold boundary, the model is validated on data it has effectively already seen, and the score describes how well it remembers rather than how well it generalises to a new part. Split by group with `GroupKFold` or `StratifiedGroupKFold`, using the variable that defines "new" in deployment: part type, machine, batch or day. Exercise 7 shows how much the estimate drops when you do. Chapter 11 returns to the same problem for time series, where the group is time itself, and Chapter 17 treats it as one of the recurring failure modes of applied ML.
 
 ## 7.4 Learning curves: is it the data or the model?
 
