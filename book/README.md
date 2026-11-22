@@ -12,7 +12,7 @@ Chapter drafts expanded from the 2026 lecture supplements, labs and extras. Each
 | [12. Attention and transformers](chapters/ch12_attention_and_transformers.md) | Lecture 11, Supplements 1 and 2, Lab 11 |
 | [13. Reinforcement learning foundations](chapters/ch13_reinforcement_learning_foundations.md) | Lecture 12, Supplement 1 (Sections 1 to 3), Lab 12 |
 | [14. Deep reinforcement learning for robot control](chapters/ch14_deep_reinforcement_learning.md) | Lecture 12 Supplement 1, `extras/` DQN, PPO and SAC deep dives |
-| 15. RL-tuned PID | Not drafted yet (`extras/PID_tuning_with_RL/`) |
+| [15. Reinforcement learning for PID tuning](chapters/ch15_rl_for_pid_tuning.md) | `extras/PID_tuning_with_RL/` |
 | [16. Deployment and sim-to-real](chapters/ch16_deployment_and_sim_to_real.md) | Lecture 13, Lab 13 |
 | [17. Responsible machine learning](chapters/ch17_responsible_ml.md) | Lecture 14, `lect14_leakage_demo.py` |
 
